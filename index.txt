@@ -1,4 +1,5 @@
-Woodex - Get Quality Furniture
+FurniHaven - Get Quality Furniture
+Pikido Ltd - Get Quality Furniture
 This is an eCommerce html template made by codewithsadee
 
 
@@ -6,11 +7,11 @@ This is an eCommerce html template made by codewithsadee
 
 #---------- HEADER ----------#
 
-placeholder = Search Anything...
+placeholder = Search Furniture...
 
 <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
 
-Woodex
+Pikido Ltd
 
 aria-label = user
 <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
@@ -33,10 +34,12 @@ aria-label = open menu
 aria-label = close menu
 <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
 
+20:02
+
 Language
 English
 French
-Arabric
+Spanish
 
 Currency
 USD - US Dollar
@@ -66,20 +69,20 @@ Follow US On Socials
 
 #---------- HERO ----------#
 
-alt = Art Deco Home
+alt = Wooden Vase
 
-Art Deco Home
+Wooden Vase
 
 Decoration
 
-Helen Chair
+Wooden Arm Chair
 
 Vase Of Flowers
 
-Wood Eggs
+Tv cabinet decor
 
-Table Wood Pine
-
+Wooden Table 
+44.41
 Furniture
 
 
