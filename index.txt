@@ -4,7 +4,9 @@ This is an eCommerce html template made by codewithsadee
 
 
 
-
+Evo-Nirvana
+Hola-tech
+evo-fusion 
 #---------- HEADER ----------#
 
 placeholder = Search Furniture...
@@ -34,7 +36,7 @@ aria-label = open menu
 aria-label = close menu
 <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
 
-20:02
+
 
 Language
 English
@@ -82,24 +84,23 @@ Vase Of Flowers
 Tv cabinet decor
 
 Wooden Table 
-44.41
 Furniture
 
 
 
 #---------- ABOUT ----------#
 
-Woodex Store
+PIKIDO LTD
 
 When you start with a portrait and search for a pure form, a clear volume, through successive eliminations, you arrive inevitably at the egg. Likewise, starting with the egg and following the same process in reverse, one finishes with the portrait.
 
-alt = Woodex promo
+alt = Pikido promo
 
 aria-label = play video
 
 <ion-icon name="play-circle-outline" aria-hidden="true"></ion-icon>
 
-
+46.58
 
 #---------- PRODUCT ----------#
 
