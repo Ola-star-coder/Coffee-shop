@@ -153,55 +153,56 @@ $130.50
 
 filter = accessory
 High Quality Glass Bottle
-$30.10
+$30.50
 
 filter = accessory
 Living Room & Bedroom Lights
 $45.00
 
 filter = furniture
-Nancy Chair
-$90.00
+Simple Bed design
+$400.00
 
 filter = furniture
-Simple Chair
-$40.00
+Modern Dining Area
+$400.00
 
 filter = decoration
 Smooth Disk
-$46.00
+$16.00
 
 filter = furniture
-Table Black
-$67.00
+All White Dining Area
+$670.00
 
 filter = furniture
-Table Wood Pine
-$50.00
+Mini Table Cabinet
+$500.00
 
 filter = accessory
-Teapot with black tea
+Black Teapot 
 $25.00
 
 filter = decoration
-Unique Decoration
-$15.00
+Simple Study Room
+$250.00
 
 filter = decoration
-Vase Of Flowers
-$77.00
+Interior Lamp Decor
+$140.00
 
 filter = decoration
 Wood Eggs
 $19.00
 
 filter = decoration
-Wooden Box
-$27.00
+Wooden Vase
+$5.00
 
-filter = accessory
+filter = furniture
 Wooden Cups
 $29.00
+57:20
 
 
 
