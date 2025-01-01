@@ -290,4 +290,4 @@ Map
 
 aria-label = back to top
 
-<ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+<ion-icon name="arrow-up" aria-hidden="true"></ion-icon
