@@ -203,34 +203,32 @@ filter = furniture
 Wooden Door
 $299.00
 
-1.15.44
 
 
 #---------- BLOG ----------#
-
 Explore our blog
 
 View All
 <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
 
-alt = Unique products that will impress your home in 2022.
+alt = Unique artworks that will impress your home in 2024.
 
 Read more
 <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
 
-Unique products that will impress your home in 2022.
+Unique artworks that will impress your home in 2024.
 
-November 27, 2022
+November 27, 2024
 Admin
 in deco
 
-Navy Blue & White Striped Area Rugs
+How To Decorate the best Living Room
 
 November 25
 
-Woodex White Coated Staircase Floating
+Behind The Scenes Of Pikido Decoration
 
-November 18
+January 2
 
 
 

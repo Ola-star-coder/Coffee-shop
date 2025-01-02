@@ -11,6 +11,7 @@ const addEventonElem = function(elem, type, callback){
     }
 }
 
+// Variables
 //nav toggler variables
 const navbar = document.querySelector('[data-navbar]');
 const navbarLinks = document.querySelectorAll('[data-nav-link]');
@@ -18,7 +19,11 @@ const navTogglers = document.querySelectorAll('[data-nav-toggler]');
 const overlay = document.querySelector('[data-overlay]');
 // Header active variable when we scroll down window.
 const header = document.querySelector('[data-header]');
+//Product filter variables
+const filterBtns = document.querySelectorAll('[data-filter-btn]');
+const filterBox = document.querySelector('[data-filter]');
 
+// Functionality
 // toggler navbar
 const toggleNavbar = function(){
   navbar.classList.toggle('active');
@@ -42,23 +47,17 @@ const showElemOnScroll = function(){
     }
    }
 
-
-   // product filter
-const filterBtns = document.querySelectorAll('[data-filter-btn]');
-const filterBox = document.querySelector('[data-filter]');
-
+// product filter
 let lastClickedFilterBtn = filterBtns[0];
-
 const filter = function (){
 lastClickedFilterBtn.classList.remove('active');
 this.classList.add('active');
 lastClickedFilterBtn = this;
-
 filterBox.setAttribute('data-filter', this.dataset.filterBtn)
 }
 
 
-// event
+// event on element
 addEventonElem(navTogglers, 'click', toggleNavbar);
 addEventonElem(navbarLinks, 'click', closeNavbar);
 addEventonElem(window, 'scroll', showElemOnScroll);
