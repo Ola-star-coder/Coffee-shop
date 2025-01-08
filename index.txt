@@ -233,12 +233,12 @@ January 2
 
 
 #---------- NEWSLETTER ----------#
-
+1.28.19
 Our Newsletter
 
-Subscribe our newsletter and get discount 50% off
+Subscribe our newsletter and get discount 10% off
 
-placeholder = Your email address
+placeholder = Input Your email address
 
 aria-label = subscribe
 
