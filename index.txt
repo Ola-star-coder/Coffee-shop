@@ -248,17 +248,17 @@ aria-label = subscribe
 
 #---------- FOOTER ----------#
 
-Woodex
+Pikido
 
 <ion-icon name="location-sharp" aria-hidden="true"></ion-icon>
-Woodex, Chicago, USA 2022
+PIKIDO LTD, Lagos, Nigeria 2025
 
 <ion-icon name="call-sharp" aria-hidden="true"></ion-icon>
-+1234567890
++234567833901
 
 <ion-icon name="logo-facebook"></ion-icon>
 <ion-icon name="logo-twitter"></ion-icon>
-<ion-icon name="logo-tumblr"></ion-icon>
+<ion-icon name="logo-instagram"></ion-icon>
 
 Help & Information
 Help & Contact Us
@@ -273,14 +273,15 @@ FAQ Page
 Contact Us
 
 Newsletter
-placeholder = Your email address
+placeholder = Add Your email address
 <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
 
 Term & Condition
-Policy
-Map
+Legal Notices
+Privacy
 
-&copy; 2022 All Rights Reserved by codewithsadee.
+
+&copy; 2025 All Rights Reserved by EntoTech.
 
 
 
@@ -288,4 +289,4 @@ Map
 
 aria-label = back to top
 
-<ion-icon name="arrow-up" aria-hidden="true"></ion-icon
+<ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
