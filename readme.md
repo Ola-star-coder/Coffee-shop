@@ -1,2 +1,2 @@
-A coffee shop-Built by ola-dev
+A furniture shop-Built by ola-dev
 downloaded starter file
