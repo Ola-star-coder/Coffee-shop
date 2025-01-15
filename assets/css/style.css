@@ -895,7 +895,7 @@ a.card-meta-text:is(:hover, :focus) {
     column-gap: 25px;
   }
 
-  .blog .grid-list>li:last-child {
+  .grid-list>li:last-child {
     grid-column: span 2;
     max-width: calc(50% - 12.5px);
     width: 100%;
