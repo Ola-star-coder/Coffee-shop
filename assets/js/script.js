@@ -17,6 +17,8 @@ const navbar = document.querySelector('[data-navbar]');
 const navbarLinks = document.querySelectorAll('[data-nav-link]');
 const navTogglers = document.querySelectorAll('[data-nav-toggler]');
 const overlay = document.querySelector('[data-overlay]');
+//Dark mode toggler variable
+const darkModeToggler = document.querySelector('[data-dark-mode-toggler]');
 
 // Header active variable when we scroll down window.
 const header = document.querySelector('[data-header]');
@@ -34,6 +36,17 @@ const toggleNavbar = function(){
   overlay.classList.toggle('active');
   document.body.classList.toggle('active');
 }
+
+const toggleDarkMode = function(){
+    darkModeToggler.classList.toggle('active');
+    document.body.classList.toggle('dark-theme');
+    if(document.body.classList.contains('dark-theme')){
+        localStorage.setItem('dark-theme', 'true');
+    } else{
+        localStorage.removeItem('dark-theme');
+    }
+}
+
 
 // toggler navbar close
 const closeNavbar = function(){
@@ -65,6 +78,7 @@ filterBox.setAttribute('data-filter', this.dataset.filterBtn)
 
 // event on element
 addEventonElem(navTogglers, 'click', toggleNavbar);
+addEventonElem(darkModeToggler, 'click', toggleDarkMode);
 addEventonElem(navbarLinks, 'click', closeNavbar);
 addEventonElem(window, 'scroll', showElemOnScroll);
 addEventonElem(filterBtns, 'click', filter);

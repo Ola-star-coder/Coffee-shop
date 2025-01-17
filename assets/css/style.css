@@ -20,15 +20,16 @@
   --spanish-gray: hsl(0, 0%, 60%);
   --granite-gray: hsl(0, 0%, 40%);
   --tan-crayola: hsl(27, 46%, 58%);
-  --light-gray: hsl(0, 0%, 80%);
+  --primary-light-gray: hsl(0, 0%, 80%);
   --black_10: hsla(0, 0%, 0%, 0.1);
   --black_25: hsla(0, 0%, 0%, 0.25);
   --black_50: hsla(0, 0%, 0%, 0.4);
   --black_70: hsla(0, 0%, 0%, 0.7);
   --cultured: hsl(220, 16%, 96%);
   --manatee: hsl(218, 11%, 65%);
-  --black: hsl(0, 0%, 0%);
-  --white: hsl(0, 0%, 100%);
+  --primary-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(0, 0%, 0%);
+
 
   /* Typo */
   --ff-roboto: 'Roboto', sans-serif;
@@ -57,6 +58,12 @@
   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 }
 
+.dark-theme {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  ---secondary-2-grey: #d9d9d9;
+  --secondary-2-color: #000;
+}
 
 
 /*-----------------------------------*\
@@ -122,8 +129,8 @@ address {
 }
 
 body {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 1.6rem;
   line-height: 1.7;
 }
@@ -187,7 +194,7 @@ body.active {
 
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
-  background-color: var(--light-gray);
+  background-color: var(--primary-light-gray);
   overflow: hidden;
 }
 
@@ -239,7 +246,7 @@ body.active {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--primary-color);
   padding-block: 15px;
   z-index: 4;
 }
@@ -282,6 +289,7 @@ body.active {
   position: relative;
   font-size: 24px;
   transition: var(--transition-1);
+  color: var(--secondary-color);
 }
 
 .header-action-btn:is(:hover, :focus) {
@@ -291,7 +299,7 @@ body.active {
 
 .header-action-btn .btn-badge {
   background-color: var(--tan-crayola);
-  color: var(--white);
+  color: var(--primary-color);
   font-size: var(--fs-6);
   font-weight: var(--fw-500);
   position: absolute;
@@ -311,7 +319,8 @@ body.active {
   max-width: 420px;
   width: 100%;
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 40px;
   padding-block-end: 100px;
   overflow-y: auto;
@@ -328,6 +337,7 @@ body.active {
 
 .nav-close-btn {
   font-size: 30px;
+  color: var(--secondary-color);
 }
 
 .sidebar .wrapper {
@@ -339,7 +349,7 @@ body.active {
 .sidebar-list-title,
 .contact-list-title,
 .social-list-title {
-  color: var(--smokey-black);
+  color: var(--secondary-color);
   font-weight: var(--fw-500);
 }
 
@@ -348,7 +358,7 @@ body.active {
 }
 
 .sidebar-link {
-  color: var(--spanish-gray);
+  color: var(--secondary-color);
   margin-block-start: 6px;
   transition: var(--transition-1);
 }
@@ -372,7 +382,7 @@ body.active {
 
 .navbar-link:is(:hover, :focus),
 .sidebar :is(.address, .contact-item) {
-  color: var(--granite-gray);
+  color: var(---secondary-2-grey);
 }
 
 .sidebar .address {
@@ -437,6 +447,11 @@ body.active {
 .hero-card .card-title {
   transition: var(--transition-1);
   font-size: var(--fs-3);
+  color: var(--secondary-2-color);
+}
+
+.hero-card .card-text {
+  color: var(--secondary-2-color);
 }
 
 .hero-card .card-title:is(:hover, :focus) {
@@ -478,7 +493,7 @@ body.active {
   display: grid;
   place-content: center;
   font-size: 80px;
-  color: var(--white);
+  color: var(--primary-white);
   transition: var(--transition-2);
 }
 
@@ -506,12 +521,17 @@ body.active {
   position: relative;
 }
 
+.section-title {
+  color: var(--secondary-color);
+}
+
 .filter-btn-item:not(:last-child)::after {
   content: "|";
   margin-inline: 15px;
 }
 
 .filter-btn {
+  color: var(--secondary-color);
   transition: var(--transition-1);
 }
 
@@ -551,7 +571,8 @@ body.active {
 }
 
 .product-card .card-action-btn {
-  background-color: var(--white);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 22px;
   padding: 12px;
   border-radius: 50%;
@@ -559,8 +580,8 @@ body.active {
 }
 
 .product-card .card-action-btn:is(:hover, :focus) {
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .product-card .badge-list {
@@ -570,7 +591,7 @@ body.active {
 }
 
 .product-card .badge {
-  color: var(--white);
+  color: var(--primary-color);
   font-size: var(--fs-5);
   font-weight: var(--fw-500);
   width: 45px;
@@ -592,8 +613,8 @@ body.active {
   position: absolute;
   top: 15px;
   right: 15px;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: var(--fw-500);
   padding-inline: 15px;
 }
@@ -603,7 +624,7 @@ body.active {
 }
 
 .product-card .card-title {
-  color: var(--smokey-black);
+  color: var(--secondary-color);
   font-weight: var(--fw-500);
   margin-block: 18px 5px;
   transition: var(--transition-1);
@@ -617,12 +638,12 @@ body.active {
   display: flex;
   justify-content: center;
   gap: 15px;
-  color: var(--granite-gray);
+  color: var(---secondary-2-grey);
   font-size: var(--fs-4);
 }
 
 .product-card .card-price .del {
-  color: var(--spanish-gray);
+  color: var(---secondary-2-grey);
 }
 
 .product-list>* {
@@ -681,7 +702,7 @@ body.active {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: var(--white);
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   gap: 5px;
@@ -697,6 +718,7 @@ body.active {
 .blog-card .card-title {
   margin-block: 20px 10px;
   transition: var(--transition-1);
+  color: var(--secondary-color);
 }
 
 .blog-card .card-title:is(:hover, :focus) {
@@ -710,7 +732,7 @@ body.active {
 
 .card-meta-item {
   position: relative;
-  color: var(--granite-gray);
+  color: var(---secondary-2-grey);
   font-size: var(--fs-5);
 }
 
@@ -722,7 +744,7 @@ body.active {
 
 .card-meta-text {
   display: inline-block;
-  color: var(--black);
+  color: var(--secondary-color);
   transition: var(--transition-1);
 }
 
@@ -745,10 +767,15 @@ a.card-meta-text:is(:hover, :focus) {
 
 .newsletter .section-title {
   margin-block-end: 8px;
+  color: var(--secondary-2-color);
 }
 
 .newsletter-card .h2 {
   --fs-2: 2.6rem;
+}
+
+.newsletter .section-text {
+  color: var(--secondary-2-color);
 }
 
 .newsletter .card-form {
@@ -756,7 +783,8 @@ a.card-meta-text:is(:hover, :focus) {
 }
 
 .newsletter-card .email-field {
-  background-color: var(--white);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding-block: 14px;
   padding-inline: 20px 50px;
   outline: 3px solid transparent;
@@ -765,7 +793,11 @@ a.card-meta-text:is(:hover, :focus) {
 }
 
 .newsletter-card .email-field:focus {
-  outline-color: var(--black_25);
+  outline-color: var(--black_50);
+}
+
+.newsletter-card .email-field::placeholder {
+  color: var(--secondary-color);
 }
 
 .newsletter-btn {
@@ -774,6 +806,7 @@ a.card-meta-text:is(:hover, :focus) {
   right: 0;
   bottom: 0;
   padding-inline: 20px;
+  color: var(--secondary-color);
 }
 
 /*-----------------------------------*\
@@ -805,7 +838,7 @@ a.card-meta-text:is(:hover, :focus) {
 }
 
 .footer-list-title {
-  color: var(--smokey-black);
+  color: var(--secondary-color);
   margin-block-end: 15px;
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
@@ -818,13 +851,17 @@ a.card-meta-text:is(:hover, :focus) {
 .footer .email-field {
   padding-block: 10px;
   padding-inline-end: 35px;
-  border-block-end: 1px solid var(--black_25);
+  border-block-end: 1px solid var(--secondary-color);
   outline: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .footer .email-field:focus {
   border-color: var(--red-orange-color-wheel);
 }
+
+
 
 .footer-form-btn {
   position: absolute;
@@ -832,7 +869,7 @@ a.card-meta-text:is(:hover, :focus) {
   right: 0;
   bottom: 0;
   font-size: 20px;
-  color: var(--granite-gray);
+  color: var(--secondary-color);
 }
 
 .footer-list .wrapper {
@@ -858,7 +895,7 @@ a.card-meta-text:is(:hover, :focus) {
   bottom: 30px;
   right: 30px;
   background-color: var(--tan-crayola);
-  color: var(--white);
+  color: var(--primary-white);
   font-size: 24px;
   padding: 18px;
   border-radius: 50%;
@@ -913,6 +950,8 @@ a.card-meta-text:is(:hover, :focus) {
   }
 
   .header .input-field {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding-block: 10px;
     padding-inline-end: 30px;
     border-block-end: 1px solid var(--black_25);
@@ -922,6 +961,10 @@ a.card-meta-text:is(:hover, :focus) {
 
   .header .input-field::-webkit-search-cancel-button {
     display: none;
+  }
+
+  .header .input-field {
+    border-block-end-color: var(--secondary-color);
   }
 
   .header .input-field:focus {
